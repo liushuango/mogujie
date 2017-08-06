@@ -70,20 +70,52 @@ a{
 	}
 }
 .lq_yj{
-		border:num(1rem) solid #ddd;
+		// border:num(1rem) solid #ddd;
+		// height:num(16rem);
+		// width:num(16rem);
+		// background:url(../img/checkbox.png) no-repeat;
+		// background-size:num(16rem);
+		// border-radius:100%;
+		// display:inline-block;
+
+		vertical-align: middle;
+		outline: none;
+		border:none;
+		// visibility: hidden;
+		display: none;
+
+
+	}
+
+
+label{
+	cursor: pointer;
+	display:inline-block;
+	vertical-align: middle;
+	height:num(16rem);
+			margin-left:num(13rem);
+		margin-right:num(6rem);
+	span{
 		height:num(16rem);
 		width:num(16rem);
-		border-radius:50%;
-		display:inline-block;
-		margin-left:num(13rem);
-		margin-right:num(6rem);
-		vertical-align: middle;
+		display: inline-block;
+		background:url(../img/check1.png) no-repeat left top;
+		background-size:num(16rem);
+		vertical-align: top;
+		
 	}
+}
+
+.lq_yj:checked + label span{
+	background:url(../img/check2.png) no-repeat left top;
+		background-size:num(16rem);
+}
+
 .bbxq{
 	height:num(108rem);
 	width:100%;
 	display:flex;
-
+	vertical-align: middle;
 	background:#fefefe;
 	.bbxq_img{
 		width:num(55rem);
@@ -92,13 +124,21 @@ a{
 		margin-top:num(13rem);
 		margin-left:num(9rem);
 		img{
-			width:100%;
+		width:100%;
 		height:100%;
 		}
 	}
-	.lq_yj{
-		margin-top:num(34rem);
+	label {
+		// margin-top: num(34rem);
+		height:num(108rem);
+		line-height:num(108rem);
+		font-size: 0;
+		span{
+			vertical-align: middle;
+		}
+		
 	}
+	
 }
 .bbxq_right{
 	font-size:num(12rem);
@@ -126,6 +166,9 @@ a{
 	width:100%;
 }
 .footer{
+	position:fixed;
+	left:0;
+	bottom:0;
 	height:num(42rem);
 	width:100%;
 	line-height:num(42rem);
@@ -150,4 +193,5 @@ a{
 	span:nth-child(3){
 		color:#ff5777;
 	}
+
 }
